@@ -18,7 +18,7 @@ app.use(express.json());
 
 app.get("/", (_req, res) => {
   res.json({
-    mensaje: "API de Veterinaria funcionando correctamente 🐾",
+    mensaje: "API de Veterinaria funcionando correctamente",
   });
 });
 
