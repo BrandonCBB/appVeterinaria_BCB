@@ -16,6 +16,12 @@ app.use(cors({
 
 app.use(express.json());
 
+app.get("/", (_req, res) => {
+  res.json({
+    mensaje: "API de Veterinaria funcionando correctamente 🐾",
+  });
+});
+
 app.get("/api/salud", (_req, res) => {
   res.json({ mensaje: "API de Veterinaria funcionando" });
 });
